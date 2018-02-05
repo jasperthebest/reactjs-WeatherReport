@@ -1,14 +1,12 @@
-Check build for final output. You can run by using this comment:
+You can see project inside build folder by running it from server or localhost.
 
-npm init
-
-Then use this code 
+You can also run code by using below command.
 
 npm start
 
 or
 
-Yarn start
+yarn start
 
 What we are looking for
 This exercise is to examine your technical knowledge, reasoning and engineering principals. There are no tricks or hidden agendas. We are looking for a demonstration of your experience and skill using current software development technologies and methods. 
