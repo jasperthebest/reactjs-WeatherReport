@@ -1,3 +1,15 @@
+Check build for final output. You can run by using this comment:
+
+npm init
+
+Then use this code 
+
+npm start
+
+or
+
+Yarn start
+
 What we are looking for
 This exercise is to examine your technical knowledge, reasoning and engineering principals. There are no tricks or hidden agendas. We are looking for a demonstration of your experience and skill using current software development technologies and methods. 
 
