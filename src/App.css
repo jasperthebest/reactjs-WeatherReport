@@ -1,0 +1,378 @@
+/* Variable */
+/* Common css */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.center-block {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.row .center-block {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+* {
+  -webkit-tap-highlight-color: transparent; }
+
+.fL {
+  float: left; }
+
+.fR {
+  float: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
+a, a:focus, input:focus, textarea:focus, select:focus {
+  outline: none;
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+figure {
+  margin: 0; }
+
+dl, dt, dd {
+  margin: 0; }
+
+blockquote, ul, li, ol, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+textarea {
+  resize: none; }
+
+input[type="text"], input[type="password"], textarea {
+  border-radius: 0;
+  -webkit-appearance: none;
+  appearance: none; }
+
+.container {
+  width: 1240px; }
+
+/* Basic setup */
+html {
+  background-color: #FFF; }
+
+body {
+  background-color: #f2f7fb;
+  color: #000;
+  font: 400 16px/24px "Raleway", sans-serif; }
+
+.coverBG {
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+h1 {
+  color: #000;
+  font: 700 30px/40px "Raleway", sans-serif;
+  padding: 30px 10px; }
+  h1 small {
+    display: block;
+    font-size: 14px;
+    font-weight: 400; }
+    h1 small a {
+      color: #1483ff;
+      font-weight: 700; }
+      h1 small a:hover {
+        color: #333; }
+
+h2 {
+  color: #000;
+  font: 700 28px/38px "Raleway", sans-serif;
+  padding-bottom: 25px; }
+
+h3 {
+  color: #000;
+  font: 700 24px/30px "Raleway", sans-serif;
+  padding-bottom: 15px; }
+
+h4 {
+  color: #000;
+  font: 700 20px/26px "Raleway", sans-serif;
+  padding-bottom: 15px; }
+
+h5 {
+  color: #000;
+  font: 700 18px/24px "Raleway", sans-serif;
+  padding-bottom: 15px; }
+
+h6 {
+  color: #000;
+  font: 700 16px/20px "Raleway", sans-serif;
+  padding-bottom: 10px; }
+
+p {
+  padding-bottom: 25px; }
+
+a {
+  color: #000;
+  transition: all 0.3s linear; }
+
+.App {
+  padding-bottom: 30px; }
+
+.sortFilterblock {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px 40px; }
+  .sortFilterblock > div {
+    background-color: #FFF;
+    border-left: 1px solid #1483ff;
+    padding: 25px 25px 25px 40px;
+    width: 33.33%; }
+    .sortFilterblock > div:first-child {
+      border-left: none; }
+    .sortFilterblock > div h4 i {
+      padding-right: 15px; }
+    .sortFilterblock > div .radioBox {
+      padding-bottom: 5px; }
+    .sortFilterblock > div .sortBlock span {
+      text-transform: capitalize; }
+
+.inputSearch {
+  margin: 0 auto;
+  padding-bottom: 40px;
+  width: 65%; }
+  .inputSearch > div {
+    position: relative; }
+    .inputSearch > div i {
+      font-size: 20px;
+      left: 15px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 0.3s linear; }
+
+.searchType {
+  border: none;
+  border-radius: 10px !important;
+  color: inherit;
+  display: block;
+  margin: 0;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: inherit;
+  line-height: 28px;
+  outline: none;
+  padding: 13px 15px 13px 50px;
+  transition: box-shadow 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 100%; }
+  .searchType:focus {
+    box-shadow: 0.2rem 0.8rem 1.6rem rgba(0, 0, 0, 0.1); }
+  .searchType:focus + i {
+    color: #1483ff; }
+
+.flexGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  padding: 0 15px; }
+
+.gridView {
+  background-color: #FFF;
+  border: 1px solid #dfe4ed;
+  border-top: 3px solid #1483ff;
+  box-shadow: 0px 0px 10px 2px rgba(218, 223, 232, 0.85);
+  height: 100%;
+  margin-top: 0;
+  transition: all 0.2s ease-in-out; }
+  .gridView:hover {
+    margin-top: -4px; }
+  .gridView .topName {
+    border-bottom: 1px solid #dfe4ed;
+    padding: 10px 35px 10px 20px;
+    position: relative; }
+    .gridView .topName h2 {
+      padding-bottom: 10px; }
+      .gridView .topName h2 i {
+        padding-left: 10px; }
+    .gridView .topName h5 {
+      font-weight: 500;
+      padding-bottom: 0; }
+    .gridView .topName > span {
+      color: #718598;
+      display: block; }
+  .gridView .dateExam {
+    background-color: #f7fafd;
+    border-bottom: 1px solid #dfe4ed;
+    display: flex; }
+    .gridView .dateExam > div {
+      border-left: 1px solid #dfe4ed;
+      padding: 8px 20px;
+      width: 50%; }
+      .gridView .dateExam > div:first-child {
+        border-left: none; }
+      .gridView .dateExam > div span {
+        color: #718598;
+        display: block;
+        font-size: 14px;
+        padding-bottom: 0; }
+        .gridView .dateExam > div span i {
+          padding-right: 10px; }
+      .gridView .dateExam > div div {
+        color: #252c34;
+        font-size: 24px;
+        line-height: 26px;
+        padding: 5px 0 10px 25px; }
+  .gridView .resultRec {
+    padding: 15px 20px;
+    text-align: center; }
+    .gridView .resultRec > div {
+      color: #718598;
+      font-size: 20px;
+      line-height: 26px; }
+      .gridView .resultRec > div i {
+        padding-right: 5px; }
+      .gridView .resultRec > div span {
+        color: #333;
+        display: inline-block;
+        font-weight: 700;
+        line-height: 26px;
+        padding-left: 7px; }
+  .gridView .circleStatus {
+    background-color: #f7fafd;
+    padding: 8px 18px 10px;
+    text-align: center; }
+
+.iconWeath {
+  display: block;
+  padding: 10px 0 15px; }
+  .iconWeath i {
+    font-size: 50px; }
+
+.nextTitle {
+  color: #1483ff;
+  padding-bottom: 40px;
+  text-align: center; }
+
+.fiveDay {
+  color: #1483ff;
+  padding-bottom: 35px;
+  text-align: center; }
+
+.radioBox .ui-button, .checkBox .ui-button {
+  color: #718598;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 0;
+  padding: 0 0 0 30px;
+  position: relative;
+  text-align: left;
+  z-index: 2; }
+  .radioBox .ui-button span, .checkBox .ui-button span {
+    background-color: #a0abc0;
+    color: #f2f7fb;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-left: 10px;
+    padding: 0 10px;
+    text-align: center; }
+  .radioBox .ui-button:before, .checkBox .ui-button:before {
+    background-color: #FFF;
+    border: 1px solid #c0cadc;
+    border-radius: 3px;
+    content: '';
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 20px;
+    z-index: 1;
+    transition: all 0.07s linear; }
+  .radioBox .ui-button:after, .checkBox .ui-button:after {
+    color: #248bff;
+    content: '\f00c';
+    font: 12px/20px "FontAwesome";
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 20px;
+    text-align: center;
+    z-index: 3;
+    transform: scale(0);
+    transition: all 0.1s linear 0.07s; }
+  .radioBox .ui-button:hover:before, .checkBox .ui-button:hover:before {
+    border-color: #248bff; }
+  .radioBox .ui-button.active:before, .checkBox .ui-button.active:before {
+    background-color: #daebff;
+    border-color: #248bff; }
+  .radioBox .ui-button.active:after, .checkBox .ui-button.active:after {
+    transform: scale(1); }
+
+.radioBox .ui-button:before {
+  border-radius: 100%; }
+
+.chartContainer {
+  padding: 0 20px 30px; }
+
+@media screen and (max-width: 1680px) {
+  .App {
+    width: auto; } }
+
+@media screen and (max-width: 1450px) {
+  .flexGrid {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media screen and (max-width: 1100px) {
+  .flexGrid {
+    grid-template-columns: repeat(2, 1fr); }
+  .sortFilterblock > div {
+    border-left: none;
+    border-bottom: 1px solid #1483ff;
+    width: 100%; } }
+
+@media screen and (max-width: 750px) {
+  .flexGrid {
+    grid-template-columns: repeat(1, 1fr); }
+  .inputSearch {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%; }
+  .flexGrid {
+    padding-top: 0; }
+  .chartContainer {
+    display: none; } }
+
+@media screen and (max-width: 600px) {
+  h4 {
+    font-size: 18px; }
+  .sortFilterblock > div {
+    padding: 20px 15px 20px 25px; } }
+
+@media screen and (max-width: 348px) {
+  .gridView .dateExam > div span i {
+    padding-right: 4px; } }

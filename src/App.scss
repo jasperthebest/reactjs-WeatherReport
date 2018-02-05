@@ -1,0 +1,168 @@
+/* Variable */
+$awe: 'FontAwesome';
+$fonts: 'Poppins', sans-serif;
+$font: 'Raleway', sans-serif;
+$black: #000;
+$white: #FFF;
+$grey: #333;
+
+/* Common css */
+.clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+.center-block {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left:0px;
+  padding-right:0px;
+}
+.row .center-block {
+  padding-left:15px;
+  padding-right:15px;
+}
+*,
+*:before,
+*:after { box-sizing: border-box; }
+* { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+.fL { float:left; }
+.fR { float:right; }
+.text-center { text-align:center; }
+.text-right { text-align:right; }
+.text-left { text-align:left; }
+.text-uppercase { text-transform:uppercase; }
+a, a:focus, input:focus, textarea:focus, select:focus { outline:none; text-decoration:none;}
+img { max-width:100%; vertical-align:middle;}
+figure {margin:0;}
+dl, dt, dd {margin:0;}
+blockquote, ul, li, ol, h1, h2, h3, h4, h5, h6, p { margin:0; padding:0; }
+li { list-style:none; }
+textarea { resize: none; }
+input[type="text"], input[type="password"], textarea { border-radius: 0; -webkit-appearance: none; appearance: none; }
+.container { width: 1240px; }
+
+/* Basic setup */
+html { background-color: $white; }
+body { background-color: #f2f7fb; color: $black; font: 400 16px/24px $font; }
+.coverBG { background-size: cover; background-repeat: no-repeat; }
+h1 { color: $black; font: 700 30px/40px $font; padding: 30px 10px; 
+  small { display: block; font-size: 14px; font-weight: 400;
+    a { color: #1483ff; font-weight: 700;
+      &:hover { color: #333; }
+    }
+  }
+}
+h2 { color: $black; font: 700 28px/38px $font; padding-bottom: 25px; }
+h3 { color: $black; font: 700 24px/30px $font; padding-bottom: 15px; }
+h4 { color: $black; font: 700 20px/26px $font; padding-bottom: 15px; }
+h5 { color: $black; font: 700 18px/24px $font; padding-bottom: 15px; }
+h6 { color: $black; font: 700 16px/20px $font; padding-bottom: 10px; }
+p { padding-bottom: 25px; }
+a { color: $black; transition: all 0.3s linear; }
+
+.App { padding-bottom: 30px; }
+.sortFilterblock { display: flex; flex-wrap: wrap; padding: 0 15px 40px;
+  > div { background-color: $white; border-left: 1px solid #1483ff; padding: 25px 25px 25px 40px; width: 33.33%; 
+    &:first-child { border-left: none; }
+    h4 {
+      i { padding-right: 15px; }
+    }
+    .radioBox { padding-bottom: 5px; }
+    .sortBlock {
+      span { text-transform: capitalize; }
+    }
+  }
+}
+.inputSearch { margin: 0 auto; padding-bottom: 40px; width: 65%; 
+  > div { position: relative; 
+    i { font-size: 20px; left: 15px; position: absolute; top: 50%; transform: translateY(-50%); transition: all 0.3s linear; }
+  }
+}
+.searchType { border: none; border-radius: 10px !important; color: inherit;  display: block; margin: 0; font-family: inherit; font-size: 18px; font-weight: inherit; line-height: 28px; outline: none; padding: 13px 15px 13px 50px;  transition: box-shadow 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); width: 100%; 
+  &:focus { box-shadow: 0.2rem 0.8rem 1.6rem rgba(0,0,0,0.1); }
+  &:focus + i { color: #1483ff; }
+}
+.flexGrid { display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 30px; padding:0 15px; }
+.gridView { background-color: $white; border: 1px solid #dfe4ed; border-top: 3px solid #1483ff; box-shadow: 0px 0px 10px 2px rgba(218,223,232,0.85); height: 100%; margin-top: 0; transition: all 0.2s ease-in-out; 
+  &:hover { margin-top: -4px; }
+  .topName { border-bottom: 1px solid #dfe4ed; padding: 10px 35px 10px 20px; position: relative;
+    h2 { padding-bottom: 10px; 
+      i { padding-left: 10px; }
+    }
+    h5 { font-weight: 500; padding-bottom: 0; }
+    > span { color: #718598; display: block; }
+  }
+  .dateExam { background-color: #f7fafd; border-bottom: 1px solid #dfe4ed; display: flex; 
+    > div { border-left: 1px solid #dfe4ed; padding: 8px 20px; width: 50%; 
+      &:first-child { border-left: none; }
+      span { color: #718598; display: block; font-size: 14px; padding-bottom: 0; 
+        i { padding-right: 10px; }
+      }
+      div { color: #252c34; font-size: 24px; line-height: 26px; padding: 5px 0 10px 25px; }
+    }
+  }
+  .resultRec { padding: 15px 20px; text-align: center;
+    > div { color: #718598; font-size: 20px; line-height: 26px;
+      i { padding-right: 5px; }
+      span { color: #333; display: inline-block; font-weight: 700; line-height: 26px; padding-left: 7px; }
+    }
+  }
+  .circleStatus { background-color: #f7fafd; padding: 8px 18px 10px; text-align: center; }
+}
+.iconWeath { display: block; padding: 10px 0 15px;
+  i { font-size: 50px; }
+}
+.nextTitle { color: #1483ff; padding-bottom: 40px; text-align: center; }
+.fiveDay { color: #1483ff; padding-bottom: 35px; text-align: center; }
+.radioBox, .checkBox {
+  .ui-button { color: #718598; cursor: pointer; display: inline-block; font-size: 16px; line-height: 20px; margin-right: 0; padding: 0 0 0 30px; position: relative; text-align: left; z-index: 2;
+    span { background-color: #a0abc0; color: #f2f7fb; border-radius: 10px; display: inline-block; font-size: 12px; font-weight: 700; line-height: 20px; margin-left: 10px; padding: 0 10px; text-align: center; }
+    &:before { background-color: $white; border: 1px solid #c0cadc; border-radius: 3px; content: ''; height: 20px; left: 0; position: absolute; top: 0; width: 20px; z-index: 1; transition: all 0.07s linear; }
+    &:after { color: #248bff; content: '\f00c'; font: 12px/20px $awe; height: 20px; left: 0; position: absolute; top: 0; width: 20px; text-align: center; z-index: 3; transform: scale(0); transition: all 0.1s linear 0.07s; }
+    &:hover {
+      &:before { border-color: #248bff; }
+    }
+    &.active {
+      &:before { background-color: #daebff; border-color: #248bff; }
+      &:after { transform: scale(1); }
+    }
+  }
+}
+.radioBox {
+  .ui-button {
+    &:before { border-radius: 100%; }
+  }
+}
+.chartContainer { padding: 0 20px 30px; }
+
+@media screen and (max-width:1680px) {
+  .App { width: auto; }
+}
+@media screen and (max-width:1450px) {
+  .flexGrid { grid-template-columns: repeat(3, 1fr) }
+}
+@media screen and (max-width:1100px) {
+  .flexGrid { grid-template-columns: repeat(2, 1fr) }
+  .sortFilterblock > div { border-left: none; border-bottom: 1px solid #1483ff; width: 100%; }
+}
+@media screen and (max-width:750px) {
+  .flexGrid { grid-template-columns: repeat(1, 1fr) }
+  .inputSearch { padding-left: 15px; padding-right: 15px; width: 100%; }
+  .flexGrid { padding-top: 0; }
+  .chartContainer { display: none; }
+}
+@media screen and (max-width:600px) {
+  h4 { font-size: 18px; }
+  .sortFilterblock > div { padding: 20px 15px 20px 25px; }
+}
+@media screen and (max-width:348px) {
+  .gridView .dateExam > div span i { padding-right: 4px; }
+}
