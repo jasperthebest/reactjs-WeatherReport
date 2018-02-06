@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Weather from './Weather';
-import Chart from './Chart';
+import Weather from './Component/Weather';
+import Chart from './Chart/Chart';
 import 'normalize.css';
-import './App.css';
+import './Style/App.css';
 
 class App extends Component {
   constructor() {

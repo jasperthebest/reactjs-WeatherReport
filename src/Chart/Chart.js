@@ -78,7 +78,7 @@ class Chart extends Component {
 	                },
 	              scaleLabel: {
 	                  display: false,
-	                  labelString: 'Month'
+	                  labelString: 'Time'
 	              }
 	          }],
 	      yAxes: [{
@@ -93,7 +93,7 @@ class Chart extends Component {
 	          }]
 	      }
 	};
-    return <Line data={data} height={50} options={options} ref='chart' />;
+    return <Line data={data} height={50} options={options} />;
   }
 }
 
