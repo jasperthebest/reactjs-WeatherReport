@@ -37,17 +37,17 @@ The build is minified and the filenames include the hashes.
 
 Your app is ready to be deployed!
 
-Linting:
+<h2>Linting:</h2>
 
 They are not required for linting. You should see the linter output right in your terminal as well as the browser console. This is because Create React App intentionally provides a minimal set of rules that find common mistakes.
 
-More documentation details:
+<h2>More documentation details:</h2>
 
 Check this link
 https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md
 
 
-What we are looking for
+<h3>What we are looking for</h3>
 
 This exercise is to examine your technical knowledge, reasoning and engineering principals. There are no tricks or hidden agendas. We are looking for a demonstration of your experience and skill using current software development technologies and methods. 
 
@@ -55,7 +55,7 @@ Please make sure your code is clear, demonstrates good practices and that the re
 
 Your solution will form the basis for discussion in any subsequent interviews.
 
-What you need to do
+<h3>What you need to do</h3>
 
 Please build a single HTML page displaying the 5 day weather forecast for a location of your choice.
 
@@ -81,7 +81,7 @@ Submit your code into a public git repository of your choice (Github / Bitbucket
 
 Host your code on a public web server of your choice.
 
-Checklist 
+<h3>Checklist </h3>
 
 Please ensure you have submitted the following:
 
